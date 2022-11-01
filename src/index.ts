@@ -4,7 +4,7 @@ export default function pluginSimpleAnalytics(context: LoadContext): Plugin {
   const isProd = process.env.NODE_ENV === 'production';
 
   return {
-    name: 'docusaurus-plugin-google-analytics',
+    name: 'docusaurus-plugin-simple-analytics',
 
     injectHtmlTags() {
       if (!isProd) {
